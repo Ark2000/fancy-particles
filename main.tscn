@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjo87ptatiehx"]
+
+[ext_resource type="Script" path="res://particles.gd" id="1_oprax"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Bg" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Particles" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oprax")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = -84.0
+offset_right = 535.0
+offset_bottom = -58.0
+scale = Vector2(2.15598, 2.5176)
+text = "Note: the 2d glow effect is unavailable in godot4 due to issue#52467"
