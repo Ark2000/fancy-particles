@@ -26,7 +26,7 @@ func _ready() -> void:
 		points.push_back(reset_po(Po.new()))
 
 
-func reset_po(po:Po) -> void:
+func reset_po(po:Po) -> Po:
 	var radius = get_rect()
 	po.position = Vector2(randf() * radius.size.x, randf() * radius.size.y)
 	po.velocity = Vector2.RIGHT.rotated(randf() * TAU) * randf_range(min_velocity, max_velocity)
